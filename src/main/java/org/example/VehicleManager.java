@@ -39,8 +39,15 @@ public class VehicleManager {
                 int mileage = sc.nextInt();
                 double latitude = sc.nextDouble();  // Depot GPS location
                 double longitude = sc.nextDouble();
-                int loadSpace = sc.nextInt();
+                double loadSpace = 0;
+                int seats = 0;
 
+                if (type.equalsIgnoreCase("Van") ||
+                        type.equalsIgnoreCase("Truck")) {
+                    loadSpace = sc.nextDouble();
+                } else {
+                    seats = sc.nextInt();
+                }
                 if (type.equalsIgnoreCase("Van") ||
                         type.equalsIgnoreCase("Truck")) {
                     // construct a Van object and add it to the passenger list
@@ -50,14 +57,23 @@ public class VehicleManager {
                             mileage, latitude, longitude,
                             loadSpace));
                 }
+
+                if (type.equalsIgnoreCase("Car")) {
+                    vehicleList.add(new Car(id, type, make, model, milesPerKwH,
+                            registration, costPerMile,
+                            year, month, day,
+                            mileage, latitude, longitude,
+                            seats));
+                }
             }
             sc.close();
 
-        } catch (IOException e) {
+        } catch (
+                IOException e) {
             System.out.println("Exception thrown. " + e);
         }
     }
 
-    //TODO add more functionality as per spec.
+//TODO add more functionality as per spec.
 
 }
