@@ -13,6 +13,8 @@ class Booking
 
     private double cost;  //Calculated at booking time
 
+//        public booking{int bookingId, int passengerId, int vehicleId, LocalDateTime bookingDateTime, LocationGPS, LocationGPS
+//        }
     //TODO - see specification
 
 }
