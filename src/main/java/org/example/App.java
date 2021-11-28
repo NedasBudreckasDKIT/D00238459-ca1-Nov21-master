@@ -31,7 +31,6 @@ public class App {
 
         vehicleManager.displayAllVehicles();
 
-
         String registration = "172LH234106";
         Vehicle vehicle = vehicleManager.findVehicleByRegistration(registration);
         if (vehicle == null)
@@ -75,6 +74,7 @@ public class App {
                         break;
                     case VEHICLES:
                         System.out.println("Vehicles option chosen");
+                        displayVehicleMenu();
                         break;
                     case BOOKINGS:
                         System.out.println("Bookings option chosen");
@@ -93,11 +93,59 @@ public class App {
         } while (option != EXIT);
 
         System.out.println("\nExiting Main Menu, goodbye.");
-
     }
+    // Sub-Menu-Vehicle
+    private void displayVehicleMenu() {
+        final String VEHICLE_MENU_ITEMS = "\n*** VEHICLE MENU ***\n"
+                + "1-> Show All Vehicles\n"
+                + "2-> Show Vehicle by Registration\n"
+                + "3-> Show Vehicle By Type\n"
+                + "4-> Exit\n"
+                + "Enter Option [1,4]";
 
-    // Sub-Menu for Passenger operations
-    //
+        final int SHOW_ALL_VEHICLES = 1;
+        final int SHOW_REG = 2;
+        final int SHOW_TYPE = 3;
+        final int EXIT = 4;
+
+        Scanner keyboard = new Scanner(System.in);
+        int option = 0;
+        do {
+            System.out.println("\n" + VEHICLE_MENU_ITEMS);
+            try {
+                String usersInput = keyboard.nextLine();
+                option = Integer.parseInt(usersInput);
+                switch (option) {
+                    case SHOW_ALL_VEHICLES:
+                        System.out.println("Displaying All Cars");
+                        vehicleManager.displayAllVehicles();
+                        break;
+                    case SHOW_REG:
+                        System.out.println("Displaying Cars by Reg");
+                        System.out.println("Input the Car Registration");
+                        String registration = keyboard.nextLine();
+                        vehicleManager.findVehicleByRegistration(registration);
+                        break;
+                    case SHOW_TYPE:
+                        System.out.println("Displaying Cars by Type");
+                        System.out.println("Input the Car Type(eg Van,Car)");
+                        String type = keyboard.nextLine();
+                        vehicleManager.findVehicleByType(type);
+                        break;
+                    case EXIT:
+                        System.out.println("Exit Menu option chosen");
+                        break;
+                    default:
+                        System.out.print("Invalid option - please enter number in range");
+                        break;
+
+                }
+            } catch (InputMismatchException | NumberFormatException e) {
+                System.out.print("Invalid option - please enter number in range");
+            }
+        } while (option != EXIT);
+    }
+    // Sub-Menu-Passenger
     private void displayPassengerMenu() {
         final String MENU_ITEMS = "\n*** PASSENGER MENU ***\n"
                 + "1-> Show all Passengers\n"
@@ -142,7 +190,7 @@ public class App {
                         String phone = keyboard.nextLine();
                         System.out.println("Enter the Passenger's Location: \n");
                         String location = keyboard.nextLine();
-                        System.out.println("The Passenger has been added!");
+                        System.out.println("The Passenger has been added! \n");
                         break;
                     case EXIT:
                         System.out.println("Exit Menu option chosen");
