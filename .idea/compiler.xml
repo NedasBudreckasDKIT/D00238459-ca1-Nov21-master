@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="vehicles-ca1-Nov21-starter" />
         <module name="oop-vehicles-ca1-Nov21-starter-master" />
       </profile>
     </annotationProcessing>

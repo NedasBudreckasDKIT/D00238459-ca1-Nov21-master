@@ -44,7 +44,7 @@ public class App {
 
         //pMgr.saveToFile();
 
-        System.out.println("Program ending, Goodbye");
+        System.out.println("Goodbye");
     }
 
     private void displayMainMenu() throws IOException {
@@ -108,7 +108,7 @@ public class App {
 
         final int SHOW_ALL = 1;
         final int FIND_BY_NAME = 2;
-        final int ADD_PASSENGER;
+        final int ADD_PASSENGER =3;
         final int EXIT = 4;
 
         Scanner keyboard = new Scanner(System.in);
@@ -125,13 +125,24 @@ public class App {
                         break;
                     case FIND_BY_NAME:
                         System.out.println("Find Passenger by Name");
-                        System.out.println("Enter passenger name: ");
+                        System.out.println("Enter the passenger's name: ");
                         String name = keyboard.nextLine();
                         Passenger p = (Passenger) passengerStore.findPassengerByName(name);
                         if (p == null)
                             System.out.println("No passenger matching the name \"" + name + "\"");
                         else
                             System.out.println("Found passenger: \n" + p.toString());
+                        break;
+                    case ADD_PASSENGER:
+                        System.out.println("Enter the Passenger's Name: \n");
+                        name = keyboard.nextLine();
+                        System.out.println("Enter the Passenger's Email: \n");
+                        String email = keyboard.nextLine();
+                        System.out.println("Enter the Passenger's Phone: \n");
+                        String phone = keyboard.nextLine();
+                        System.out.println("Enter the Passenger's Location: \n");
+                        String location = keyboard.nextLine();
+                        System.out.println("The Passenger has been added!");
                         break;
                     case EXIT:
                         System.out.println("Exit Menu option chosen");
