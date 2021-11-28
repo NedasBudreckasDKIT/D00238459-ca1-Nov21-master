@@ -29,6 +29,9 @@ public class PassengerStore {
      * Read Passenger records from a text file and create and add Passenger
      * objects to the PassengerStore.
      */
+    public Object findPassengerByName(String name){
+        return null;
+    }
     private void loadPassengerDataFromFile(String filename) {
 
         try {

@@ -21,7 +21,6 @@ package org.example;    // DO NOT CHANGE THIS FILE      November2021
 // This work is usually done by the DBMS
 // The write-to-file each time approach may be inefficient,
 // but it is easy to understand.
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
