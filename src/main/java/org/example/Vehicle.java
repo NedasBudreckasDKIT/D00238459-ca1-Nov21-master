@@ -1,145 +1,123 @@
-package org.example;
+public abstract class Vehicle {
+    protected int id;
+    protected String make;
+    protected String model;
+    protected int milesPerKM;
+    protected int numOfSeats;
+    protected String registrationNum;
+    protected double costPerMile;
+    protected String lastServiceDate;
+    protected double mileage;
+    protected LocationGPS location;
 
-import java.time.LocalDate;
-
-public abstract class Vehicle
-{
-    private IdGenerator idGenerator = IdGenerator.getInstance("next-id-store.txt");  // get access to the id Generator
-
-    private int id;
-    private String type;    // type of vehicle "Truck","Van","4x4", "Car" ...
-    private String make;
-    private String model;
-    private double milesPerKwH;
-    private String registration;
-    private double costPerMile;
-    private LocalDate lastServicedDate;
-    private int mileage; // mileage recorded at last service
-    private LocationGPS depotGPSLocation;
-
-    // Constructor called when a new Vehicle is being created.
-    // No vehicle id is passed in as an argument,
-    // so the constructor will autogenerate the id.
-    //
-    public Vehicle(String type, String make, String model, double milesPerKwH,
-                   String registration, double costPerMile,
-                   int year, int month, int day,
-                   int mileage, double latitude, double longitude)
-    {
-        this.id = idGenerator.getNextId();  // auto generated id (new for each run of the system)
-        this.type = type;
+    public Vehicle(String make, String model, int milesPerKM, int numOfSeats, String registrationNum,
+                   double costPerMile, String lastServiceDate, double mileage, double latitude, double longitude) {
+        this.id = IdGenerator.getInstance("src/next-id-store.txt").getNextId();
         this.make = make;
         this.model = model;
-        this.milesPerKwH = milesPerKwH;
-        this.registration = registration;
+        this.milesPerKM = milesPerKM;
+        this.numOfSeats = numOfSeats;
+        this.registrationNum = registrationNum;
         this.costPerMile = costPerMile;
-        this.lastServicedDate = LocalDate.of(year, month,day);
+        this.lastServiceDate = lastServiceDate;
         this.mileage = mileage;
-        this.depotGPSLocation = new LocationGPS(latitude,longitude);
+        this.location = new LocationGPS(latitude, longitude);
     }
 
-    // Constructor to create a Vehicle object, when the id is available.
-    // So this is called to construct a Vehicle when the vehicle record is read from
-    // the vehicles.txt file, and the id is known.
-    //
-    public Vehicle(int id, String type, String make, String model, double milesPerKwH,
-                   String registration, double costPerMile,
-                   int year, int month, int day,
-                   int mileage, double latitude, double longitude)
-    {
-        this.id = id;
-        this.type = type;
-        this.make = make;
-        this.model = model;
-        this.milesPerKwH = milesPerKwH;
-        this.registration = registration;
-        this.costPerMile = costPerMile;
-        this.lastServicedDate = LocalDate.of(year, month,day);
-        this.mileage = mileage;
-        this.depotGPSLocation = new LocationGPS(latitude,longitude);
-    }
-
-    public int getId() {
-        return id;
-    }
-    private void setId() {}; // prevents the id from being set (as it should only come from autogenerator)
-
-    public String getMake()
-    {
+    public String getMake() {
         return make;
     }
-    public void setMake(String make)
-    {
+
+    public void setMake(String make) {
         this.make = make;
     }
-    public String getModel()
-    {
+
+    public String getModel() {
         return model;
     }
-    public void setModel(String model)
-    {
+
+    public void setModel(String model) {
         this.model = model;
     }
-    public double getMilesPerKm()
-    {
-        return milesPerKwH;
+
+    public int getMilesPerKM() {
+        return milesPerKM;
     }
-    public void setMilesPerKm(double milesPerKm)
-    {
-        this.milesPerKwH = milesPerKm;
+
+    public void setMilesPerKM(int milesPerKM) {
+        this.milesPerKM = milesPerKM;
     }
-    public String getRegistration()
-    {
-        return registration;
+
+    public int getNumOfSeats() {
+        return numOfSeats;
     }
-    public void setRegistration(String registration)
-    {
-        this.registration = registration;
+
+    public void setNumOfSeats(int numOfSeats) {
+        this.numOfSeats = numOfSeats;
     }
-    public double getCostPerMile()
-    {
+
+    public String getRegistrationNum() {
+        return registrationNum;
+    }
+
+    public void setRegistrationNum(String registrationNum) {
+        this.registrationNum = registrationNum;
+    }
+
+    public double getCostPerMile() {
         return costPerMile;
     }
-    public void setCostPerMile(double costPerMile)
-    {
+
+    public void setCostPerMile(double costPerMile) {
         this.costPerMile = costPerMile;
     }
-    public LocalDate getLastServicedDate() { return lastServicedDate; }
-    public void setLastServicedDate(LocalDate lastServicedDate) { this.lastServicedDate = lastServicedDate; }
-    public int getMileage()
-    {
+
+    public String getLastServiceDate() {
+        return lastServiceDate;
+    }
+
+    public void setLastServiceDate(String lastServiceDate) {
+        this.lastServiceDate = lastServiceDate;
+    }
+
+    public double getMileage() {
         return mileage;
     }
-    public void setMileage(int mileage)
-    {
+
+    public void setMileage(double mileage) {
         this.mileage = mileage;
     }
-    public LocationGPS getDepotGPSLocation()
-    {
-        return depotGPSLocation;
+
+    public LocationGPS getLocation() {
+        return location;
     }
-    public void setDepotGPSLocation(double latitude, double longitude) {
-        new LocationGPS(latitude,longitude);
+
+    public void setLocation(LocationGPS location) {
+        this.location = location;
     }
-    public String getType()
-    {
-        return type;
-    }
-    public void setType(String type)
-    {
-        this.type = type;
+
+    public String getObjectStr() {
+        return this.getMake() + "," + this.getModel() + "," + this.getMilesPerKM() + "," + this.getNumOfSeats() +
+                "," + this.getRegistrationNum()
+                + "," + this.getLastServiceDate() + "," + this.getMileage() + "," + this.getLocation().getLatitude() + "," + this.getLocation().getLongitude();
     }
 
     @Override
-    public String toString()
-    {
-        return this.getClass().getSimpleName() + "{" +"id:"+ this.id + ", type:"+type+ ", make=" + make + ", model=" + model
-                + ", milesPerKm=" + milesPerKwH +  ", registration=" + registration
-                + ", costPerMile=" + costPerMile + ", lastServicedDate="
-                + lastServicedDate + ", mileage=" + mileage + ", depotGPSLocation="
-                + depotGPSLocation + '}';
+    public boolean equals(Object o) {
+        Vehicle vehicle = (Vehicle) o;
+        return this.id == vehicle.id;
     }
 
-
-     
+    @Override
+    public String toString() {
+        return " make = " + make +
+                ", model= " + model +
+                ", milesPerKM = " + milesPerKM +
+                ", numOfSeats = " + numOfSeats +
+                ", registrationNum = " + registrationNum +
+                ", costPerMile = " + costPerMile +
+                ", lastServiceDate = " + lastServiceDate +
+                ", mileage =" + mileage +
+                ", location =" + location;
+    }
 }

@@ -1,55 +1,21 @@
-package org.example;
+public class Van extends Vehicle {
+    private double loadSpace;
 
-// Van class to represent Vans and Trucks
-//
-public class Van extends Vehicle
-{
-    private double loadSpace;   // measured in litres.  For Vans and Trucks
-
-    public Van(String type, String make, String model, double milesPerKwH,
-               String registration, double costPerMile,
-               int year, int month, int day,
-               int mileage, double latitude, double longitude,
-               double loadSpace)
-    {
-        // call superclass constructor to initialize the fields defined in Vehicle
-        super(type,make,model,milesPerKwH,
-                registration,costPerMile,
-                year,month,day,
-                mileage,latitude,longitude);
-
+    public Van(String make, String model, int milesPerKM, int numOfSeats, String registrationNum, String lastServiceDate,
+               double mileage, double latitude, double longitude, double loadSpace) {
+        super(make, model, milesPerKM, numOfSeats, registrationNum, 6.00, lastServiceDate, mileage, latitude,
+                longitude);
         this.loadSpace = loadSpace;
     }
 
-    // Constructor version to be used to recreate a Van that was read from file.
-    // It will have already been allocated an id.
-    //
-    public Van(int id, String type, String make, String model, double milesPerKwH,
-               String registration, double costPerMile,
-               int year, int month, int day,
-               int mileage, double latitude, double longitude,
-               double loadSpace)
-    {
-        // call superclass constructor to initialize the fields defined in Vehicle
-        super(id,type,make,model,milesPerKwH,
-                registration,costPerMile,
-                year,month,day,
-                mileage,latitude,longitude);
-
-        this.loadSpace = loadSpace;
-    }
-
-    public double getLoadSpace() {
-        return loadSpace;
-    }
-    public void setLoadSpace(double loadSpace) {
-        this.loadSpace = loadSpace;
+    public String getObjectStr() {
+        return "Van," + super.getObjectStr() + "," + this.loadSpace;
     }
 
     @Override
     public String toString() {
-        return "Van{" +
-                "loadSpace=" + loadSpace +
-                "} " + super.toString();
+        return this.getClass().getSimpleName() +
+                " loadSpace=" + loadSpace +
+                super.toString();
     }
 }

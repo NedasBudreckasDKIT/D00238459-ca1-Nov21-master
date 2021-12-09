@@ -1,5 +1,3 @@
-package org.example;    // DO NOT CHANGE THIS FILE      November2021
-
 // This class defines an unique ID generator which can be used
 // to generate ID values (of type int).  The class maintains an int variable
 // 'nextId' that stores the next available number that can be used as an id.
@@ -21,6 +19,7 @@ package org.example;    // DO NOT CHANGE THIS FILE      November2021
 // This work is usually done by the DBMS
 // The write-to-file each time approach may be inefficient,
 // but it is easy to understand.
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -34,7 +33,7 @@ public class IdGenerator {
     private String fileName;
 
     private IdGenerator(String fileName) {     // "private" prevents external construction
-    this.fileName = fileName;
+        this.fileName = fileName;
         // open file and read the last saved "nextId" value
         try {
             File file = new File(fileName);
@@ -70,10 +69,10 @@ public class IdGenerator {
         FileWriter fWriter = null;
         try {
             fWriter = new FileWriter(file);
-            fWriter.write(Integer.toString(nextId+1));
+            fWriter.write(Integer.toString(nextId + 1));
         } catch (IOException e) {
             e.printStackTrace();
-        }finally{
+        } finally {
             //close resources
             try {
                 fWriter.close();
