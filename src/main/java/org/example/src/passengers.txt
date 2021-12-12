@@ -1,3 +1,0 @@
-Tom,TommyLee@gmail.com,12345,112.34,67.8
-Ali ,ali2001@gmail.com,12345,112.34,67.8
-Michelle,michelle@hotmail.com,0851989098,30321.0,23123.0
