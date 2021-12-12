@@ -248,5 +248,6 @@ public class BookingsManager {
         System.out.println("Average Length Is: "+ length);
     }
 
+
 }
 
