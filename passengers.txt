@@ -1,3 +1,0 @@
-Ali,ali@gmail.com,12345,112.34,67.8
-Ali3 ,ali@gmail.com,12345,112.34,67.8
-Hello,helo@gmail.com,123456,34.5,67.9
