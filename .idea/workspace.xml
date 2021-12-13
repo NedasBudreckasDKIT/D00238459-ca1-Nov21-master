@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79b3f8bb-be6b-45a8-a5ce-ceb5e38b1106" name="Changes" comment="FILEIO FIxes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/src/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/src/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/src/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/src/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/src/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/src/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/src/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/passengers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/passengers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/BookingsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/BookingsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/PassengerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/PassengerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/Van.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/Van.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/VehiclesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/VehiclesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/src/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/src/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicles-ca1-Nov21-starter.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ned &lt;d00238459@student.dkit.ie&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
+  </component>
+  <component name="ProjectId" id="21MbBUA6SssuzyLFLJTDAlehUIZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="oop-vehicles-ca1-Nov21-starter-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.src.Main" />
+      <module name="vehicles-ca1-Nov21-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="oop-vehicles-ca1-Nov21-starter-master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79b3f8bb-be6b-45a8-a5ce-ceb5e38b1106" name="Changes" comment="" />
+      <created>1637753767931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637753767931</updated>
+      <workItem from="1637753769095" duration="4512000" />
+      <workItem from="1637948368046" duration="1069000" />
+      <workItem from="1638029167727" duration="835000" />
+      <workItem from="1638110885335" duration="1184000" />
+      <workItem from="1638112850305" duration="78000" />
+      <workItem from="1638113001601" duration="161000" />
+      <workItem from="1638129099951" duration="8253000" />
+      <workItem from="1638180523637" duration="106000" />
+      <workItem from="1638217768931" duration="3039000" />
+      <workItem from="1639344378122" duration="615000" />
+      <workItem from="1639345665986" duration="609000" />
+      <workItem from="1639436154132" duration="141000" />
+      <workItem from="1639436416967" duration="100000" />
+      <workItem from="1639436547106" duration="332000" />
+      <workItem from="1639436893221" duration="781000" />
+    </task>
+    <task id="LOCAL-00001" summary="fixes">
+      <created>1637754818461</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637754818461</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixes">
+      <created>1637757248749</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637757248750</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixes">
+      <created>1637757315749</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637757315749</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updates">
+      <created>1638130805235</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638130805235</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updates">
+      <created>1638132216342</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638132216342</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updates">
+      <created>1638137396406</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638137396406</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updates">
+      <created>1638137411699</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638137411699</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FILEIO FIxes">
+      <created>1639436257062</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1639436257062</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FILEIO FIxes">
+      <created>1639436282636</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1639436282636</updated>
+    </task>
+    <task id="LOCAL-00010" summary="FILEIO FIxes">
+      <created>1639436424969</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1639436424969</updated>
+    </task>
+    <task id="LOCAL-00011" summary="FILEIO FIxes">
+      <created>1639436434649</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1639436434649</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="fixes 2" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="updates" />
+    <MESSAGE value="FILEIO FIxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="FILEIO FIxes" />
+  </component>
+</project>
