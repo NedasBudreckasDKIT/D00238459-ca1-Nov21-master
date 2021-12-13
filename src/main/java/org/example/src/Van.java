@@ -1,3 +1,5 @@
+package org.example.src;
+
 public class Van extends Vehicle {
     private int loadSpace;
 

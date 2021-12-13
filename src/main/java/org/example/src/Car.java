@@ -1,3 +1,5 @@
+package org.example.src;
+
 public class Car extends Vehicle {
     private int numberOfSeats;
     public Car(String make, String model, double milesPerKWH, String registrationNumber, String lastServicedDate, int mileage, double depotLatitude, double depotLongitude, String type, int numberOfSeats) {

@@ -1,6 +1,8 @@
+package org.example.src;
+
 import java.time.LocalDateTime;
 public class Booking {
-    //Our Booking Class Required Class Members
+    //Booking Class Required Class Members
     private static int count = 0;
     private int id;
     private LocalDateTime bookingDate;
@@ -98,7 +100,7 @@ public class Booking {
         this.cost = cost;
     }
 
-    //To String Method Which Formats Our Object Before Printing
+    //To String Method Which Formats Before Printing
     @Override
     public String toString() {
         String date = this.getBookingDate().format(Main.format);

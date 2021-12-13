@@ -1,3 +1,5 @@
+package org.example.src;
+
 import java.io.*;
 import java.time.LocalDateTime;
 import java.util.Scanner;
@@ -8,9 +10,9 @@ public class Reader {
     private File vehiclesFile;
 
     public Reader() {
-        bookingsFile = new File("bookings.txt");
-        passengersFile = new File("passengers.txt");
-        vehiclesFile = new File("vehicles.txt");
+        bookingsFile = new File("src/main/java/org/example/bookings.txt");
+        passengersFile = new File("src/main/java/org/example/passengers.txt");
+        vehiclesFile = new File("src/main/java/org/example/vehicles.txt");
     }
 
     public void loadBookings(){

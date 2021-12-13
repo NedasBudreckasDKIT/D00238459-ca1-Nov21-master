@@ -1,3 +1,5 @@
+package org.example.src;
+
 import java.time.LocalDateTime;
 
 public class Email {

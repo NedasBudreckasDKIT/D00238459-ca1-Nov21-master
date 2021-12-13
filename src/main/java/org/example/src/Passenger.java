@@ -1,3 +1,5 @@
+package org.example.src;
+
 public class Passenger {
     private String name;
     private static int count = 0;

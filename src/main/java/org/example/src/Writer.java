@@ -1,3 +1,5 @@
+package org.example.src;
+
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -8,7 +10,7 @@ public class Writer {
 
     public void writeBookings(){
         try {
-            bookingsWriter = new FileWriter("bookings.txt");
+            bookingsWriter = new FileWriter("src/main/java/org/example/bookings.txt");
             for (Booking booking : BookingsManager.bookings) {
                 bookingsWriter.write(booking.getObjectStr());
             }
@@ -20,7 +22,7 @@ public class Writer {
 
     public void writePassengers(){
         try {
-            passengersWriter = new FileWriter("passengers.txt");
+            passengersWriter = new FileWriter("src/main/java/org/example/passengers.txt");
             for (Passenger passenger : PassengerManager.passengers) {
                 passengersWriter.write(passenger.getObjectStr());
             }
@@ -32,7 +34,7 @@ public class Writer {
 
     public void writeVehicles(){
         try {
-            vehiclesWriter = new FileWriter("vehicles.txt");
+            vehiclesWriter = new FileWriter("src/main/java/org/example/vehicles.txt");
             for (Vehicle vehicle : VehiclesManager.fleet) {
                 if (vehicle.getType().equals("Car") || vehicle.getType().equals("car") || vehicle.getType().equals("4x4") || vehicle.getType().equals("4*4")) {
                     Car car = findCar(vehicle.getId());
