@@ -76,6 +76,11 @@ public class PassengerManager {
         System.out.println("Enter longitude: ");
         double longitude = input.nextDouble();
         input.nextLine();
+        boolean checkDuplicate = preventDuplicates(name,email);
+        if(!checkDuplicate){
+            System.out.println("Passenger With Name: "+ name + " And Email: " + email + " Already Present." );
+            return;
+        }
         Passenger passenger = new Passenger(name,email,phone,latitude,longitude);
         passengers.add(passenger);
     }
@@ -134,7 +139,20 @@ public class PassengerManager {
             System.out.println("Passenger Telephone: "+ passenger.getTelephone());
             System.out.println("Passenger Latitude: "+ passenger.getHomeLatitude());
             System.out.println("Passenger Longitude: "+ passenger.getHomeLongitude());
+            System.out.println("\n");
         }
+    }
+
+    public static boolean preventDuplicates(String passengerName, String passengerEmail){
+        if(passengers.size() == 0){
+            return true;
+        }
+        for(Passenger passenger: passengers){
+            if(passenger.getName().equals(passengerName) && passenger.getEmail().equals(passengerEmail)){
+                return false;
+            }
+        }
+        return true;
     }
 
 }

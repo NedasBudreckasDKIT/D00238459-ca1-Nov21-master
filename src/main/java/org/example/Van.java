@@ -11,4 +11,12 @@ public class Van extends Vehicle {
             this.setCostPerMiles(10);
         }
     }
+
+    public int getLoadSpace() {
+        return loadSpace;
+    }
+
+    public void setLoadSpace(int loadSpace) {
+        this.loadSpace = loadSpace;
+    }
 }

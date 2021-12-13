@@ -1,7 +1,8 @@
+import java.time.LocalDateTime;
 public class Booking {
     private static int count = 0;
     private int id;
-    private String bookingDate;
+    private LocalDateTime bookingDate;
     private double startLatitude;
     private double startLongitude;
     private double endLatitude;
@@ -50,7 +51,7 @@ public class Booking {
         this.passengerID = passengerID;
     }
 
-    public Booking(String bookingDate, double startLatitude, double startLongitude, double cost, double endLatitude, double endLongitude, int vehicleID, int passengerID) {
+    public Booking(LocalDateTime bookingDate, double startLatitude, double startLongitude, double cost, double endLatitude, double endLongitude, int vehicleID, int passengerID) {
         this.bookingDate = bookingDate;
         this.startLatitude = startLatitude;
         this.startLongitude = startLongitude;
@@ -79,11 +80,11 @@ public class Booking {
         this.id = id;
     }
 
-    public String getBookingDate() {
+    public LocalDateTime getBookingDate() {
         return bookingDate;
     }
 
-    public void setBookingDate(String bookingDate) {
+    public void setBookingDate(LocalDateTime bookingDate) {
         this.bookingDate = bookingDate;
     }
 
